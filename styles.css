@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: "DynaPuff";
+    cursor: url('./cursor-default.cur'), auto;
+}
+
+
+#character-creation {
+    padding: 2rem;
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background: #b9edff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-shadow: 1px 4px 2px gray;
+    transition: transform 1.25s ease-in;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #1ab5ff;
+
+
+}
+
+h2 {
+    font-size: 3rem;
+    color: #1ab5ff;
+
+}
+
+#gallery {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#gallery img {
+    height: 10rem;
+    max-width: 15rem;
+    padding: 0 2rem;
+}
+
+#game-window {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 7rem 1fr 7rem;
+    user-select: none;
+}
+
+header {
+    background: #b9edff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+i {
+    color: #1ab5ff;
+    font-size: 50px;
+    transition: all 0.25s ease-in-out;
+}
+
+i:hover {
+    transform: scale(1.2);
+}
+
+main {
+    background: #79d6ff;
+    border-top: 10px solid #1ab5ff;
+    border-bottom: 10px solid #1ab5ff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+main img {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+footer {
+    background: #b9edff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
