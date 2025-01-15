@@ -45,6 +45,7 @@ function fetchImagesForSelection() {
 const characterCreation = document.getElementById('character-creation')
 const form = document.getElementById('form')
 const formName = document.getElementById('name')
+const formSubmit = document.getElementById('submit')
 const character = document.getElementById('character')
 const main = document.querySelector('main')
 
@@ -53,6 +54,7 @@ const main = document.querySelector('main')
 form.addEventListener('submit', function(e) {
     e.preventDefault()
     fetchAllAdoptedCats()
+    formSubmit.remove()
     characterCreation.style.transform = 'translate(0, -100vh)'
     fetch('http://localhost:3000/cats', {
         method: 'POST',
